@@ -1,0 +1,653 @@
+/* Styles pour le blog et l'interface d'administration */
+
+/* Styles généraux */
+.blog-section {
+  padding: 80px 0;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles pour les articles du blog */
+.blog-post {
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-post-content {
+  padding: 20px;
+}
+
+.blog-post-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0ea2bd;
+}
+
+.blog-post-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.blog-post-meta i {
+  margin-right: 5px;
+  color: #0ea2bd;
+}
+
+.blog-post-meta span {
+  margin-right: 15px;
+}
+
+.blog-post-excerpt {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.blog-post-link {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #0ea2bd;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog-post-link:hover {
+  background-color: #0b7a8d;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styles pour l'article complet */
+.blog-single {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog-single-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0ea2bd;
+}
+
+.blog-single-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #777;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.blog-single-meta i {
+  margin-right: 5px;
+  color: #0ea2bd;
+}
+
+.blog-single-meta span {
+  margin-right: 20px;
+}
+
+.blog-single-content {
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.blog-single-content p {
+  margin-bottom: 20px;
+}
+
+.blog-single-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.blog-single-content h2,
+.blog-single-content h3,
+.blog-single-content h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #0ea2bd;
+}
+
+.blog-single-content ul,
+.blog-single-content ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.blog-single-content li {
+  margin-bottom: 10px;
+}
+
+.blog-single-content blockquote {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #0ea2bd;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Styles pour la barre latérale du blog */
+.blog-sidebar {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog-sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0ea2bd;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.blog-sidebar-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #0ea2bd;
+  bottom: 0;
+  left: 0;
+}
+
+.blog-categories,
+.blog-recent-posts {
+  margin-bottom: 30px;
+}
+
+.blog-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-categories li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-categories li:last-child {
+  border-bottom: none;
+}
+
+.blog-categories a {
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.blog-categories a:hover {
+  color: #0ea2bd;
+  text-decoration: none;
+}
+
+.blog-recent-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.blog-recent-post-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.blog-recent-post-info h6 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.blog-recent-post-info h6 a {
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.blog-recent-post-info h6 a:hover {
+  color: #0ea2bd;
+  text-decoration: none;
+}
+
+.blog-recent-post-info span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Styles pour la pagination */
+.blog-pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-pagination .page-item .page-link {
+  color: #0ea2bd;
+  border-color: #0ea2bd;
+}
+
+.blog-pagination .page-item.active .page-link {
+  background-color: #0ea2bd;
+  border-color: #0ea2bd;
+  color: #fff;
+}
+
+.blog-pagination .page-link:hover {
+  background-color: #0ea2bd;
+  color: #fff;
+}
+
+/* Styles pour le formulaire de connexion admin */
+.login-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-logo img {
+  max-width: 150px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0ea2bd;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .form-control {
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+.login-form .form-control:focus {
+  border-color: #0ea2bd;
+  box-shadow: 0 0 0 0.2rem rgba(14, 162, 189, 0.25);
+}
+
+.login-form .btn-login {
+  width: 100%;
+  height: 50px;
+  background-color: #0ea2bd;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.login-form .btn-login:hover {
+  background-color: #0b7a8d;
+}
+
+.login-form .alert {
+  margin-bottom: 20px;
+}
+
+/* Styles pour le tableau de bord admin */
+.admin-section {
+  padding: 80px 0;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0ea2bd;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-btn {
+  padding: 10px 20px;
+  background-color: #0ea2bd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #0b7a8d;
+}
+
+.admin-btn.danger {
+  background-color: #dc3545;
+}
+
+.admin-btn.danger:hover {
+  background-color: #bd2130;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+  background-color: #f8f9fa;
+  font-weight: 700;
+  color: #0ea2bd;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.admin-table .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-table .btn-action {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-table .btn-edit {
+  background-color: #0ea2bd;
+}
+
+.admin-table .btn-edit:hover {
+  background-color: #0b7a8d;
+}
+
+.admin-table .btn-delete {
+  background-color: #dc3545;
+}
+
+.admin-table .btn-delete:hover {
+  background-color: #bd2130;
+}
+
+/* Styles pour le formulaire d'édition */
+.admin-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.admin-form-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #0ea2bd;
+}
+
+.admin-form .form-group {
+  margin-bottom: 20px;
+}
+
+.admin-form .form-control {
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+.admin-form .form-control:focus {
+  border-color: #0ea2bd;
+  box-shadow: 0 0 0 0.2rem rgba(14, 162, 189, 0.25);
+}
+
+.admin-form textarea.form-control {
+  min-height: 150px;
+}
+
+.admin-form .btn-submit {
+  padding: 10px 20px;
+  background-color: #0ea2bd;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.admin-form .btn-submit:hover {
+  background-color: #0b7a8d;
+}
+
+.admin-form .btn-cancel {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-form .btn-cancel:hover {
+  background-color: #5a6268;
+}
+
+/* Styles pour l'éditeur de texte riche */
+.tox-tinymce {
+  border-radius: 4px !important;
+  border: 1px solid #ddd !important;
+}
+
+.tox .tox-statusbar {
+  border-top: 1px solid #ddd !important;
+}
+
+/* Styles pour la gestion des images */
+.image-preview {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-preview .remove-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(220, 53, 69, 0.8);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-preview .remove-image:hover {
+  background-color: rgba(189, 33, 48, 0.8);
+}
+
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.image-upload:hover {
+  border-color: #0ea2bd;
+}
+
+.image-upload i {
+  font-size: 48px;
+  color: #ddd;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.image-upload:hover i {
+  color: #0ea2bd;
+}
+
+.image-upload p {
+  color: #777;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.image-upload:hover p {
+  color: #0ea2bd;
+}
+
+/* Styles responsifs */
+@media (max-width: 991px) {
+  .blog-sidebar {
+    margin-top: 40px;
+  }
+  
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .admin-actions {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-post-img {
+    height: 200px;
+  }
+  
+  .blog-single-title {
+    font-size: 28px;
+  }
+  
+  .admin-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .admin-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-post-img {
+    height: 180px;
+  }
+  
+  .blog-post-title {
+    font-size: 20px;
+  }
+  
+  .blog-single-title {
+    font-size: 24px;
+  }
+  
+  .login-container {
+    padding: 20px;
+  }
+}
